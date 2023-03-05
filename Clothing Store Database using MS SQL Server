@@ -54,6 +54,7 @@ GROUP BY price
 ORDER BY SUM(quantity) DESC;
 
 
+
 --In a new column, add the the total value of each item in store
 
 ALTER TABLE Plus_Central
