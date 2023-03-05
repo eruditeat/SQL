@@ -39,8 +39,12 @@ SET rack = 9
 WHERE id = 3
 
 
---
-SELECT * FROM Plus_Central ORDER BY price DESC;
+----Display the database, ordered by price, starting with the lowest price.
+
+SELECT * FROM Plus_Central ORDER BY price ASC;
+
+
+--What is the quantity of items in store by price?
 
 SELECT price, SUM(quantity) FROM Plus_Central
 GROUP BY price
