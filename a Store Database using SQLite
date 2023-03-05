@@ -1,0 +1,36 @@
+--Create a store database
+
+CREATE TABLE Plus_Central (id INTEGER PRIMARY KEY, item TEXT, size TEXT, quantity INTEGER, price NUMERIC, rack INTEGER);
+
+INSERT INTO Plus_Central VALUES (1, 'Lotus Summer Maxi dress', 'XL', 35, 45.99, 15);
+INSERT INTO Plus_Central VALUES (2, 'Lotus Summer Maxi dress', 'L', 40, 42.99, 14);
+INSERT INTO Plus_Central VALUES (3, 'Carnation bloom Jacket', 'XXL', 25, 69.99, 10);
+INSERT INTO Plus_Central VALUES (4, 'Sailor shorts', '2XL', 48, 25.99, 5);
+INSERT INTO Plus_Central VALUES (5, 'Sailor shorts', 'L', 20, 23.99, 6);
+INSERT INTO Plus_Central VALUES (6, 'California Sunset Tees', 'XL', 77, 18.99, 2);
+INSERT INTO Plus_Central VALUES (7, 'California Sunset Tees', 'L', 125, 16.99, 3);
+INSERT INTO Plus_Central VALUES (8, 'NY Hoodie', 'L', 50, 75.99, 3);
+INSERT INTO Plus_Central VALUES (9, 'NY Hoodie', 'XL', 80, 85.99, 2);
+INSERT INTO Plus_Central VALUES (10, 'NY Hoodie', 'XXL', 80, 95.99, 4);
+INSERT INTO Plus_Central VALUES (11, 'Black Rose Summer Maxi dress', 'XL', 55, 45.99, 7);
+INSERT INTO Plus_Central VALUES (12, 'Black Rose Summer Maxi dress', 'L', 60, 42.99, 8);
+INSERT INTO Plus_Central VALUES (13, 'Carnation bloom Jacket', 'XXL', 25, 69.99, 9);
+INSERT INTO Plus_Central VALUES (14, 'Timber shorts', '3XL', 24, 35.99, 5);
+INSERT INTO Plus_Central VALUES (15, 'Timber shorts', 'XL', 30, 28.99, 6);
+INSERT INTO Plus_Central VALUES (16, 'Love Actually Tees', 'XXL', 65, 22.99, 2);
+INSERT INTO Plus_Central VALUES (17, 'Love Actually Tees', 'L', 110, 16.99, 3);
+INSERT INTO Plus_Central VALUES (18, 'Dark Blue HW Stretch Jeans', 'L', 66, 25.99, 3);
+INSERT INTO Plus_Central VALUES (19, 'Blue HW Stretch Jeans', 'XL', 78, 35.99, 2);
+INSERT INTO Plus_Central VALUES (20, 'Navy Blue HW Stretch Jeans', 'XXL', 51, 45.99, 4);
+
+
+--Display the database, ordered by price, starting with the highest price.
+
+SELECT * FROM Plus_Central ORDER BY price DESC;
+
+--What is the quantity of items in store by price?
+
+SELECT price, SUM(quantity) FROM Plus_Central
+GROUP BY price
+ORDER BY SUM(quantity) DESC;
+
