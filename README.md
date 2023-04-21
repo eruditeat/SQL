@@ -15,7 +15,7 @@ A personal project on creating a database for a clothing store inventory.
 
 **View Database:**
 
-![image](https://user-images.githubusercontent.com/113871284/233519449-261d836e-25d2-4449-8738-5c02a3d968ab.png)
+![image](https://user-images.githubusercontent.com/113871284/233525469-7d0ffc11-5d8f-416e-a006-1d3bd7072a7f.png)
 
 
 **Query the database to find the quantity of items in store by price.**
