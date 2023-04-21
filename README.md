@@ -4,7 +4,7 @@
 
 ___________________________
 
-A personal project on creating a database for a clothing store inventory.
+A personal project - creating a database for a clothing store inventory.
 
 **Create Database using MS SQL Server:**
 
