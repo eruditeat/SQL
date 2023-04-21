@@ -5,10 +5,27 @@ ___________________________
 
 A personal project on creating a database for a Clothing store
 
-Create Database:
+**Create Database using MS SQL Server:**
 
-*Input* 
-![image](https://user-images.githubusercontent.com/113871284/233516539-6446f4f5-af19-4be8-9b5f-c8690f377485.png)
+![image](https://user-images.githubusercontent.com/113871284/233518559-3079bf1f-01e9-4f69-ac5d-b3d81ff20468.png)
 
-*Output*
-![image](https://user-images.githubusercontent.com/113871284/233517042-7acb19f6-a6f2-4afb-8ea3-8858b3722e8d.png)
+**In a new column, add the total value of each item in the store.**
+
+![image](https://user-images.githubusercontent.com/113871284/233519116-6169cd2c-9ab1-450e-a91e-ee8e1ea4fb20.png)
+
+**View Database:**
+
+![image](https://user-images.githubusercontent.com/113871284/233519449-261d836e-25d2-4449-8738-5c02a3d968ab.png)
+
+
+**Query the database to find the quantity of items in store by price.**
+
+![image](https://user-images.githubusercontent.com/113871284/233520218-553b4e0c-4310-4a0c-ad48-8e146bba377f.png)
+
+![image](https://user-images.githubusercontent.com/113871284/233520178-1e3a4bf3-5f0d-4949-b367-7a2f57093b07.png)
+
+**Calculate the total value of all items in inventory.**
+
+![image](https://user-images.githubusercontent.com/113871284/233520496-bf5ce2f5-11dc-48fc-99c4-092ae16f4511.png)
+
+![image](https://user-images.githubusercontent.com/113871284/233520568-939f6989-4ac2-424e-8dcd-5a39b345fd90.png)
