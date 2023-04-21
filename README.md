@@ -36,3 +36,11 @@ _________________________________________________________
 **Visualize the Data:**
 
 **Export data table from SQL Server to Excel, import .xlsx file into Tableau Public, link the data sources, create a dashboard with visualization**
+
+![image](https://user-images.githubusercontent.com/113871284/233538168-c42df973-6a75-46fd-84fb-8e30c9696ee9.png)
+
+
+**Link to interactive dashboard:**
+
+https://public.tableau.com/views/PlusCentralClothingStore/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
