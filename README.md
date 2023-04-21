@@ -1,5 +1,6 @@
-# ***Ayoola Tillman's SQL portfolio*** 
-## *Welcome to my SQL portfolio! This code repository contains examples of SQL I've written. Feel free to take a look and reach out if you have any questions: eruditeat@gmail.com*
+# ***Ayoola Tillman's SQL & Tableau portfolio*** 
+
+## *Welcome to my SQL & Tableau portfolio! This code repository contains examples of SQL I've written and links to interactive dashboards I have created using Tableau. Feel free to take a look and reach out if you have any questions: eruditeat@gmail.com*
 
 ___________________________
 
