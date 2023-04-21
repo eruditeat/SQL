@@ -3,11 +3,11 @@
 
 ___________________________
 
-A personal project on creating a database for a Clothing store
+A personal project on creating a database for a clothing store inventory.
 
 **Create Database using MS SQL Server:**
 
-![image](https://user-images.githubusercontent.com/113871284/233518559-3079bf1f-01e9-4f69-ac5d-b3d81ff20468.png)
+![image](https://user-images.githubusercontent.com/113871284/233525055-0846b555-03b6-48b1-acad-24f549ae307f.png)
 
 **In a new column, add the total value of each item in the store.**
 
@@ -29,3 +29,10 @@ A personal project on creating a database for a Clothing store
 ![image](https://user-images.githubusercontent.com/113871284/233520496-bf5ce2f5-11dc-48fc-99c4-092ae16f4511.png)
 
 ![image](https://user-images.githubusercontent.com/113871284/233520568-939f6989-4ac2-424e-8dcd-5a39b345fd90.png)
+
+
+_________________________________________________________
+
+**Visualize the Data:**
+
+**Export data table from SQL Server to Excel, import .xlsx file into Tableau Public, link the data sources, create a dashboard with visualization**
