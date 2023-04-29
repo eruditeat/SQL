@@ -1,0 +1,29 @@
+--In this SQL code, I am querying a database that holds HR data to answer questions about the data.
+--The data is publicly accessible at https://techavilly.net/download-data/
+
+
+--View the table to get familiar with the available columns,
+SELECT * FROM [dbo].['HR data']
+
+
+--Q1: How many employees have low salaries from the data?
+SELECT[salary], COUNT(*) AS emp_with_low_salary 
+FROM [dbo].['HR data']
+WHERE [salary] = 'low'
+GROUP BY [salary]
+
+
+--Q2: What's the most prominent reason for leaving the company?
+SELECT
+    CASE
+        WHEN SUM([left]) > COUNT(*) / 2 THEN 'Left'
+        ELSE 'Not Left'
+    END AS Reason,
+    SUM([promotion_last_5years]) AS Promotion_Count,
+	SUM([Work_accident]) AS Accident_Count,
+	COUNT([salary]) AS Low_Salary,
+    COUNT(*) - SUM([promotion_last_5years]) AS No_Promotion_Count
+	FROM
+    [dbo].['HR data']
+	 WHERE [salary] = 'low'
+	GROUP BY [left];
