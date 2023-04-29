@@ -1,4 +1,4 @@
---In this SQL code, I am querying a database that holds HR data to answer questions about the data.
+--In this SQL code using the SSMS syntax style, I am querying a database that holds HR data to answer questions about the data.
 --The data is publicly accessible at https://techavilly.net/download-data/
 
 
