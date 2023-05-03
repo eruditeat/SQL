@@ -1,0 +1,27 @@
+--In this SQL code using the SSMS syntax style, I am querying a database that holds Finance data to answer questions about the data.
+--The data is publicly accessible at https://techavilly.net/download-data/
+
+
+
+--To view the table to get familiar with the dataset, I ran this query;
+
+SELECT * FROM [dbo].['Finance data']
+
+
+
+--How many transaction type are in the Finance data and what are their corresponding total amounts.
+
+SELECT Distinct [type], ROUND(SUM([amount]),0) AS Total_Amount
+FROM [dbo].['Finance data']
+GROUP BY [type]
+ORDER BY [type];
+
+
+
+--Show a breakdown of all transaction types in percentage.
+
+SELECT [type],ROUND(COUNT(*)* 100/ (SELECT COUNT(*)
+FROM [dbo].['Finance data']),1) 
+AS Total_Percent FROM [dbo].['Finance data']
+WHERE [type] IN ('CASH_OUT','TRANSFER', 'CASH_IN', 'DEBIT', 'PAYMENT')
+GROUP BY [type]
