@@ -25,3 +25,38 @@ FROM [dbo].['Finance data']),1)
 AS Total_Percent FROM [dbo].['Finance data']
 WHERE [type] IN ('CASH_OUT','TRANSFER', 'CASH_IN', 'DEBIT', 'PAYMENT')
 GROUP BY [type]
+
+
+
+--What percentage of the total transaction amount is Cash_Out?
+
+SELECT [type],Round(Sum([amount]) * 100/ (SELECT Sum([amount])
+FROM [dbo].['Finance data']),1) AS percentage_of_Total
+FROM [dbo].['Finance data']
+WHERE [type]= 'CASH_OUT'
+GROUP BY [type];
+
+
+
+--What is the count of all the fraud transactions in the Finance Data?
+
+SELECT [type],count(*) AS Fraud_Transactions 
+FROM [dbo].['Finance data']
+WHERE [isFraud] = 1
+GROUP BY [type]
+
+
+
+--Show the total amount of each transaction type, as well as the percenatage breakdown.
+
+SELECT [type], ROUND(SUM([amount]),0) AS TotalAmount
+FROM [dbo].['Finance data']
+GROUP BY [type]
+
+SELECT [type],Round(sum([amount])* 100/ (SELECT sum([amount])
+FROM [dbo].['Finance data']),1) 
+AS Total FROM[dbo].['Finance data']
+GROUP BY [type]
+
+
+
