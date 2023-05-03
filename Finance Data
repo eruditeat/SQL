@@ -60,3 +60,18 @@ GROUP BY [type]
 
 
 
+--What is the total count of payment transaction in the Finance Data?
+
+SELECT [type], COUNT(*) AS Total_Count 
+FROM [dbo].['Finance data']
+WHERE [type] = 'PAYMENT'
+GROUP BY [type]
+
+
+
+--Show all the types of transactions greater than $2000,000, display only the type and the amount 
+
+SELECT TOP 1000 [type], [amount]
+FROM [dbo].['Finance data'] 
+WHERE ([amount]>2000000) 
+ORDER BY [amount] DESC
