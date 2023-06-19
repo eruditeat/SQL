@@ -38,7 +38,7 @@ _________________________________________________________
 
 **Export data table from SQL Server to Excel, import .xlsx file into Tableau Public, link the data sources, create a dashboard with visualization**
 
-![image](https://user-images.githubusercontent.com/113871284/233538168-c42df973-6a75-46fd-84fb-8e30c9696ee9.png)
+![image](https://github.com/eruditeat/SQL-Tableau/assets/113871284/a06e172d-754b-455b-8c00-673795a40917)
 
 
 **Link to interactive dashboard:**
